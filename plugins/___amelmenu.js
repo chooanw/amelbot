@@ -100,7 +100,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
           "description": `
-*p km jelek*
+*p km jelek :)*
 `.trim(),
           "buttonText": "BUKA MENU",
           "listType": "SINGLE_SELECT",
