@@ -22,8 +22,9 @@ handler.before = function (m) {
 	 : ((user.level >= 81) && (user.level <= 85)) ? 'Audition Superhero'
 	 : ((user.level >= 86) && (user.level <= 90)) ? 'Audition Maestro'
 	 : ((user.level >= 91) && (user.level <= 95)) ? 'Maestro'
-     : ((user.level >= 1000) && (user.level <= 1000)) ? 'Administrator'
-     : 'Administrator'
+         : ((user.level >= 1000) && (user.level <= 1000)) ? 'Administrator'
+         : ((user.level >= 10000) && (user.level <= 10000)) ? 'Kepala Suku Ferengi'
+         : 'Kepala Suku Ferengi'
     user.role = role
     return true
 }
