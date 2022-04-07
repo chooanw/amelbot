@@ -1,7 +1,7 @@
 let fetch = require("node-fetch")
 async function handler(m, {command}) {
 //m.reply('_Loading..._')
-let res = await fetch(`https://github.com/chooanw/botwanyaamel/raw/main/audio/${command}.mp3`)
+let res = await fetch(`https://github.com/chooanw/database/raw/main/audio/${command}.mp3`)
 json = await res.buffer()
      await conn.sendFile(m.chat, json, 'error.mp3', null, m, true)
 }
